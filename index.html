@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechMantra</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background: #f9f9ff;
+        padding: 20px;
+      }
+
+      /* Navbar */
+      .navbar {
+        background: linear-gradient(to right, #b3ffab, #12fff7);
+        border-radius: 25px;
+        padding: 12px 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        position: fixed;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+
+      .navbar ul {
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+        list-style: none;
+      }
+
+      .navbar a {
+        text-decoration: none;
+        color: #003049;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 18px;
+        transition: color 0.3s ease;
+      }
+
+      .navbar a:hover {
+        color: #0077cc;
+      }
+
+      /* Header section */
+      header {
+        text-align: center;
+        margin: 30px 0;
+      }
+
+      header img {
+        margin: 0 20px;
+      }
+
+      /* Event Boxes */
+      .container {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap;
+        margin-top: 30px;
+      }
+
+      .box {
+        width: 300px;
+        background: linear-gradient(to bottom right, #e0f7fa, #b2ebf2);
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        text-align: center;
+      }
+
+      .box:hover {
+        transform: translateY(-10px);
+      }
+
+      .box img {
+        width: 50px;
+        height: 50px;
+      }
+
+      .box h1 {
+        font-size: 22px;
+        margin: 10px 0;
+      }
+
+      .box p {
+        margin-top: 10px;
+        line-height: 1.5;
+        text-align: justify;
+        color: #333;
+      }
+
+      /* Schedule Table */
+      .tab {
+        margin: 60px auto;
+        width: 90%;
+        border-collapse: collapse;
+        font-size: 16px;
+      }
+
+      .tab th,
+      .tab td {
+        padding: 12px;
+        text-align: center;
+        border: 1px solid #ccc;
+      }
+
+      .tab th {
+        background: linear-gradient(to right, #d9a7c7, #fffcdc);
+        color: #333;
+        font-size: 17px;
+      }
+
+      .tab td {
+        background-color: #f0f8ff;
+      }
+
+      /* CTA Section */
+      .cta-section {
+        background: linear-gradient(to right, #89f7fe, #66a6ff);
+        border-radius: 20px;
+        width: 80%;
+        margin: 40px auto;
+        padding: 30px;
+        text-align: center;
+        color: #003049;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .cta-section h2 {
+        font-size: 2em;
+        margin-bottom: 10px;
+        font-style: italic;
+      }
+
+      .cta-section p {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+      }
+
+      .cta-button {
+        background-color: #003049;
+        color: white;
+        padding: 12px 30px;
+        border-radius: 12px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.1em;
+        transition: background-color 0.3s ease;
+      }
+
+      .cta-button:hover {
+        background-color: #0077b6;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#info">Information</a></li>
+        <li><a href="#Schedule">Schedule</a></li>
+        <li><a href="#register">Register</a></li>
+      </ul>
+    </nav>
+
+    <!-- Logo Header -->
+    <header id="home">
+      <img src="images/logo.png" alt="Logo" width="80px" />
+      <img src="images/tech.png" alt="TechMantra" style="height: 80px" />
+      <img src="images/logo.png" alt="Logo" width="80px" />
+    </header>
+
+    <!-- Event Descriptions -->
+    <div class="container" id="info">
+      <div class="box">
+        <img src="images/codeClash.png" alt="Code Battle" />
+        <h1>Code Battle</h1>
+        <p>
+          Code Battle is a fast-paced coding competition where participants
+          solve challenging problems to test their skills and speed. Open to all
+          college students, this event offers exciting puzzles and prizes. Join
+          us at ZIBACAR Hall and show off your coding talent!
+        </p>
+      </div>
+
+      <div class="box">
+        <img src="images/codeClash.png" alt="Treasure Hunt" />
+        <h1>Treasure Hunt</h1>
+        <p>
+          Explore, solve clues, and race against time in our thrilling Treasure
+          Hunt! Work in teams to uncover hidden hints around the campus and be
+          the first to find the treasure. Get ready for fun, teamwork, and
+          excitement!
+        </p>
+      </div>
+
+      <div class="box">
+        <img src="images/codeClash.png" alt="Quiz" />
+        <h1>Quiz</h1>
+        <p>
+          Test your knowledge in our fast-paced Quiz competition! From general
+          trivia to tech questions, challenge yourself and compete with others
+          to win amazing prizes. Perfect for quick thinkers and curious minds!
+        </p>
+      </div>
+    </div>
+
+    <!-- Schedule Table -->
+    <table class="tab" id="Schedule">
+      <tr>
+        <th colspan="4" style="height: 50px">TechMantra Schedule</th>
+      </tr>
+      <tr>
+        <th>Event Name</th>
+        <th>Time</th>
+        <th>Location</th>
+        <th>Entry Fee</th>
+      </tr>
+      <tr>
+        <td>Code Battle</td>
+        <td>10:00 AM</td>
+        <td>ZIBACAR Hall</td>
+        <td>₹50 Per Person</td>
+      </tr>
+      <tr>
+        <td>Treasure Hunt</td>
+        <td>11:30 AM</td>
+        <td>ZIBACAR Garden</td>
+        <td>₹40 Per Team</td>
+      </tr>
+      <tr>
+        <td>Quiz</td>
+        <td>2:00 PM</td>
+        <td>Auditorium</td>
+        <td>₹30 Per Person</td>
+      </tr>
+    </table>
+
+    <!-- Call to Action Section -->
+    <div class="cta-section" id="register">
+      <h2>Don't wait any longer!</h2>
+      <p>
+        Register yourself now and be a part of TechMantra. Have fun, learn, and
+        win exciting prizes!
+      </p>
+      <a href="register.html" class="cta-button">Register Here</a>
+    </div>
+  </body>
+</html>
